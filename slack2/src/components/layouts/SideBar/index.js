@@ -30,30 +30,31 @@ function SideBar() {
     return(
         <Container>
             <SideBarHeader />
+            
+                <SideBarOption Icon={InsertCommentIcon} title="Threads"/>
+                <SideBarOption Icon={InboxIcon} title="Mentions & reactions"/>
+                <SideBarOption Icon={DraftsIcon} title="Saved items"/>
+                <SideBarOption Icon={BookmarkBorderIcon} title="Channel browser"/>
 
-            <SideBarOption Icon={InsertCommentIcon} title="Threads"/>
-            <SideBarOption Icon={InboxIcon} title="Mentions & reactions"/>
-            <SideBarOption Icon={DraftsIcon} title="Saved items"/>
-            <SideBarOption Icon={BookmarkBorderIcon} title="Channel browser"/>
+                <SideBarOption Icon={PeopleAltIcon} title="People & user groups"/>
+                <SideBarOption Icon={AppsIcon} title="Apps"/>
+                <SideBarOption Icon={FileCopyIcon} title="File browser"/>
+                <SideBarOption Icon={ExpandLessIcon} title="Show less"/>
 
-            <SideBarOption Icon={PeopleAltIcon} title="People & user groups"/>
-            <SideBarOption Icon={AppsIcon} title="Apps"/>
-            <SideBarOption Icon={FileCopyIcon} title="File browser"/>
-            <SideBarOption Icon={ExpandLessIcon} title="Show less"/>
+                <hr />
+                <SideBarOption Icon={ExpandMoreIcon} title="Channels"/>
+                <hr />
 
-            <hr />
-            <SideBarOption Icon={ExpandMoreIcon} title="Channels"/>
-            <hr />
+                <SideBarOption Icon={AddIcon} addChannelOption title="Add Channel"/>
 
-            <SideBarOption Icon={AddIcon} addChannelOption title="Add Channel"/>
-
-            {channels?.docs.map(doc => (
-                <SideBarOption
-                    key={doc.id}
-                    id={doc.id}
-                    title={doc.data().name}
-                />
-            ))}
+            
+                {channels?.docs.map(doc => (
+                    <SideBarOption
+                        key={doc.id}
+                        id={doc.id}
+                        title={doc.data().name}
+                    />
+                ))}
         </Container>
     );
 }
