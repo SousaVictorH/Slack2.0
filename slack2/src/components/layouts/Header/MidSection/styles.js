@@ -29,4 +29,5 @@ export const Input = styled.input`
     min-width: 30vw;
     outline: none;
     color: var(--white);
+    width: 90%:
 `;

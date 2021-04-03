@@ -10,7 +10,7 @@ function MidSection() {
     return(
         <Container>
             <Search />
-            <Input placeholder="teste" />
+            <Input placeholder="Search something" />
         </Container>
     );
 }

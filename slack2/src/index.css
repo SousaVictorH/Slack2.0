@@ -15,10 +15,13 @@ body {
 
   --slack-color: #3f0f40;
   --primary: #421f44;
+  --secondary: #49274b;
+  --tertiary: #340e36;
 
   --white: #fff;
   --black: #000;
   --gray: rgb(128, 128, 128);
+  --green: green;
 }
 
 code {
