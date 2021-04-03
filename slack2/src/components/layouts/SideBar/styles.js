@@ -8,6 +8,7 @@ export const Container = styled.div`
     border-top: 1px solid var(--secondary);
     margin-top: 62px;
     max-width: 260px;
+    min-height: calc(100vh - 62px);
 
     > hr {
         margin: 10px 0;

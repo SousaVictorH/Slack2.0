@@ -15,8 +15,7 @@ function Router() {
             <Header />
             <AppBody />
             <Switch>
-                <Route path="/" exact>
-                    
+                <Route path="" exact>
                 </Route>
             </Switch>
 

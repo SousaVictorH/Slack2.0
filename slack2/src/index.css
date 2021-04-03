@@ -22,6 +22,7 @@ body {
   --black: #000;
   --gray: rgb(128, 128, 128);
   --green: green;
+  --light-gray: Lightgray;
 }
 
 code {
