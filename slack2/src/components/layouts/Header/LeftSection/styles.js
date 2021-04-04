@@ -14,6 +14,7 @@ export const Container = styled.div`
 
 export const Avatar = styled(_Avatar)`
     display: flex;
+    cursor: pointer;
 `;
 
 export const AccessTime = styled(AccessTimeIcon)`

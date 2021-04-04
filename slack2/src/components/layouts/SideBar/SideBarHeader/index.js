@@ -7,14 +7,19 @@ import {
     CreateIcon
 } from './styles';
 
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { auth } from '../../../../firebase';
+
 function SideBarHeader() {
+    const [user] = useAuthState(auth);
+
     return (
         <Container>
             <SideBarInfo>
-                <h2>Channel 1 info</h2>
+                <h2>CC's Group</h2>
                 <h3>
                     <FiberManualRecordIcon />
-                    Sonny Sangha
+                    {user?.displayName}
                 </h3>
             </SideBarInfo>
             <CreateIcon />

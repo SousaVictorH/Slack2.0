@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import {
     BrowserRouter,
@@ -9,17 +9,41 @@ import {
 import Header from '../components/layouts/Header';
 import AppBody from '../components/layouts/AppBody';
 
-function Router() {
-    return(
-        <BrowserRouter>
-            <Header />
-            <AppBody />
-            <Switch>
-                <Route path="" exact>
-                </Route>
-            </Switch>
+import AppLoading from '../components/layouts/AppLoading';
 
-        </BrowserRouter>
+import Login from '../components/layouts/Login';
+
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { auth } from '../firebase';
+
+function Router() {
+    const [user, loading] = useAuthState(auth);
+
+    useEffect(() => {
+        console.log(user);
+    }, [user]);
+
+    const renderApp = () => {
+        return(
+            <BrowserRouter>
+                <Header />
+                <Switch>
+                    <Route path="/" exact>
+                        <AppBody />
+                    </Route>
+                </Switch>
+            </BrowserRouter>
+        );
+    }
+
+    if (loading) {
+        return(
+            <AppLoading />
+        );
+    }
+
+    return(
+        user ? renderApp() : <Login />
     );
 };
 
