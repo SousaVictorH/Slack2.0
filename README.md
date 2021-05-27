@@ -9,17 +9,17 @@ The main goal of this project is to improve my skills with Redux and firebase ho
   
 <div>
   <h3>Login with Google Account</h3>
-  <img src="https://github.com/SousaVictorH/Slack2.0/blob/master/slack2/public/videos/slackLogin.gif" alt="Login">
+  <img src="https://github.com/SousaVictorH/Slack2.0/blob/master/public/videos/slackLogin.gif" alt="Login">
 </div>
 
 <div>
   <h3>Create Channels</h3>
-  <img src="https://github.com/SousaVictorH/Slack2.0/blob/master/slack2/public/videos/slackChat.gif" alt="Channels">
+  <img src="https://github.com/SousaVictorH/Slack2.0/blob/master/public/videos/slackChat.gif" alt="Channels">
 </div>
 
 <div>
   <h3>Chat between different accounts</h3>
-  <img src="https://github.com/SousaVictorH/Slack2.0/blob/master/slack2/public/videos/slackMultipleAccounts.gif" alt="Chat">
+  <img src="https://github.com/SousaVictorH/Slack2.0/blob/master/public/videos/slackMultipleAccounts.gif" alt="Chat">
 </div>
 
 ###  :hammer: Made with
